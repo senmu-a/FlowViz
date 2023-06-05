@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "FlowViz",
+  "description": "我们的项目名为“看见流水”，旨在帮助每个人更好地管理自己的财务流水。我们相信，只有当你真正了解自己的收入和支出情况时，才能更好地掌控自己的财务状况。",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
