@@ -13,31 +13,33 @@ export default class Index extends Component {
     list: [
       {
         pagePath: '/pages/index/index',
-        selectedIconPath: '/images/edit-fill.png',
-        iconPath: '/images/edit.png',
+        selectedIconPath: '../images/edit-fill.png',
+        iconPath: '../images/edit.png',
         text: '记账'
       },
       {
         pagePath: '/pages/report/index',
-        selectedIconPath: '/images/sales-report-fill.png',
-        iconPath: '/images/sales-report.png',
+        selectedIconPath: '../images/sales-report-fill.png',
+        iconPath: '../images/sales-report.png',
         text: '报表'
       },
       {
         pagePath: '/pages/settings/index',
-        selectedIconPath: '/images/settings-fill.png',
-        iconPath: '/images/settings.png',
+        selectedIconPath: '../images/settings-fill.png',
+        iconPath: '../images/settings.png',
         text: '设置'
       }
     ]
   }
 
   switchTab(index, url) {
+    console.log('shhlo')
     this.setSelected(index)
     Taro.switchTab({ url })
   }
 
   setSelected (idx: number) {
+    console.log('shsadasll')
     this.setState({
       selected: idx
     })
@@ -45,6 +47,8 @@ export default class Index extends Component {
 
   render() {
     const { list, selected, color, selectedColor } = this.state
+
+    console.log(selected, 'seleted')
 
     return (
       <CoverView className='tab-bar'>

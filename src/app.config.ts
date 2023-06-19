@@ -5,26 +5,38 @@ export default defineAppConfig({
     'pages/report/index',
     'pages/settings/index'
   ],
+  darkmode: true,
+  themeLocation: 'theme.json',
   window: {
-    backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
+    navigationBarBackgroundColor: "@navBgColor",
+    backgroundColor: "@bgColor",
+    backgroundColorTop: "@bgColorTop",
+    backgroundColorBottom: "@bgColorBottom"
   },
   tabBar: {
-    custom: true,
-    list: [{
-      pagePath: "pages/index/index",
-      text: "首页"
-    }, {
-      pagePath: "pages/calculator/index",
-      text: "计算器"
-    }, {
-      pagePath: "pages/report/index",
-      text: "报表"
-    }, {
-      pagePath: "pages/settings/index",
-      text: "设置"
-    }]
+    custom: false,
+    color: '@tabFontColor',
+    selectedColor: '@tabFontColor',
+    backgroundColor: '@bgColor',
+    list: [
+      {
+        pagePath: 'pages/index/index',
+        selectedIconPath: 'images/edit-fill.png',
+        iconPath: 'images/edit.png',
+        text: '记账'
+      },
+      {
+        pagePath: 'pages/report/index',
+        selectedIconPath: 'images/sales-report-fill.png',
+        iconPath: 'images/sales-report.png',
+        text: '报表'
+      },
+      {
+        pagePath: 'pages/settings/index',
+        selectedIconPath: 'images/settings-fill.png',
+        iconPath: 'images/settings.png',
+        text: '设置'
+      }
+    ]
   },
 })

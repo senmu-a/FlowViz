@@ -1,5 +1,13 @@
 @import "./custom-theme.scss";
 page {
-  background: $color-brand;
-  color: #EAEAEA;
+  background: $color-brand-light;
+  color: $font-color-light;
+}
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  page {
+      background: $color-brand;
+      color: $font-color;
+  }
+  /* DarkMode 下的样式 end */
 }
