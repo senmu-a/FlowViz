@@ -1,0 +1,37 @@
+@import "../../custom-theme.scss";
+.senmu-tabs-container {
+  display: inline-block;
+  border: 2px solid $border-color-light;
+  border-radius: 16px 16px 0 0;
+  .senmu-tabs__item {
+    display: inline-block;
+    background: transparent;
+    border-right: 2px solid $border-color-light;
+    padding: 24px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.senmu-tabs__item-active {
+      background: $date-brand-light;
+      color: $font-color-light;
+    }
+  }
+}
+
+/* 适配深色模式 */
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  .senmu-tabs-container {
+    border: 2px solid $border-color;
+    .senmu-tabs__item {
+      border-right: 2px solid $border-color;
+      &.senmu-tabs__item-active {
+        background: $date-brand;
+        color: $font-color;
+      }
+    }
+  }
+  /* DarkMode 下的样式 end */
+}

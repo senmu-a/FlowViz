@@ -8,4 +8,20 @@ $font-color: #EAEAEA;
 $font-color-light: #404040;
 $font-color-shallow: #898A93;
 $font-color-shallow-light: #A6A6A6;
+$border-color-light: #D9D9D9;
+$border-color: #898A93;
+
+/* 通用颜色 */
+$color-blue: #5986F2;
+$color-red: #FE7474;
+$color-income: #9AB8FF;
+$color-expense: #FF9A9A;
+
+/* 日期颜色 */
+$date-brand-light: #F5F5F5;
+$date-brand: #595968;
+$date-brand_arrow-light: #A6A6A6;
+$date-brand_arrow: #BABABF;
+
 @import "~taro-ui/dist/style/index.scss";
+@import "./reset-style.scss";

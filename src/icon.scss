@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4151253 */
+  src: url('./assests/iconfont.woff2?t=1688461706938') format('woff2'),
+       url('./assests/iconfont.woff?t=1688461706938') format('woff'),
+       url('./assests/iconfont.ttf?t=1688461706938') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gym:before {
+  content: "\e93f";
+}
+
+.icon-yiyuan:before {
+  content: "\e605";
+}
+
+.icon-bank:before {
+  content: "\e7c6";
+}
+
+.icon-car:before {
+  content: "\e7d7";
+}
+
+.icon-icon-test:before {
+  content: "\e626";
+}
+
+.icon-train:before {
+  content: "\e73a";
+}
+
+.icon-boat:before {
+  content: "\e614";
+}
+
+.icon-gift:before {
+  content: "\e771";
+}
+
+.icon-Gas-Pump:before {
+  content: "\e8ae";
+}
+
+.icon-ball:before {
+  content: "\e62d";
+}
+
+.icon-food:before {
+  content: "\e80c";
+}
+
+.icon-bonus:before {
+  content: "\e640";
+}
+
+.icon-books:before {
+  content: "\e613";
+}
+
+.icon-jiubei:before {
+  content: "\e732";
+}
+
+.icon-cook:before {
+  content: "\e6e7";
+}
+
+.icon-PillOutline:before {
+  content: "\e6b0";
+}
+
+.icon-salary:before {
+  content: "\e612";
+}
+
+.icon-house:before {
+  content: "\e627";
+}
+
+.icon-headset:before {
+  content: "\e7e1";
+}
+

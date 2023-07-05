@@ -1,6 +1,7 @@
 import { Component, PropsWithChildren } from 'react'
 import './custom-theme.scss'
 import './app.scss'
+import './icon.scss'
 
 class App extends Component<PropsWithChildren> {
 

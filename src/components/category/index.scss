@@ -1,0 +1,33 @@
+@import "../../custom-theme.scss";
+.category-wrapper {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  border: 2px solid $border-color-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $font-color-light;
+  .category-name {
+    font-size: 30px;
+  }
+  &:active {
+    border: 2px solid $color-blue;
+    color: $color-blue;
+  }
+  ~.category-wrapper-active {
+    border: 2px solid $color-blue;
+    color: $color-blue;
+  }
+}
+
+/* 适配深色模式 */
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  .category-wrapper {
+    color: $font-color;
+    border: 2px solid $border-color;
+  }
+  /* DarkMode 下的样式 end */
+}

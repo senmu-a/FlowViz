@@ -1,0 +1,18 @@
+@import "../../custom-theme.scss";
+.card-list-container {
+  background: transparent;
+  border: 2px solid $border-color-light;
+  border-radius: 16px;
+  &.card-list_nobordered {
+    border: none;
+  }
+}
+
+/* 适配深色模式 */
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  .card-list-container  {
+    border: 2px solid $border-color;
+  }
+  /* DarkMode 下的样式 end */
+}

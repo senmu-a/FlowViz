@@ -1,0 +1,43 @@
+@import "../../custom-theme.scss";
+.date-range-container {
+  height: 100px;
+  background: $date-brand-light;
+  color: $font-color-light;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  .date-range_left, .date-range_right {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid $date-brand_arrow-light;
+    text-align: center;
+    line-height: 80px;
+    color: $date-brand_arrow-light;
+    &:active {
+      color: $color-blue;
+      border: 2px solid $color-blue;
+    }
+  }
+  .date-range_content {
+    &:active {
+      color: $color-blue;
+    }
+  }
+}
+
+/* 适配深色模式 */
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  .date-range-container {
+    background: $date-brand;
+    color: $font-color;
+    .date-range_left, .date-range_right {
+      border: 2px solid $date-brand_arrow;
+      color: $date-brand_arrow;
+    }
+  }
+  /* DarkMode 下的样式 end */
+}

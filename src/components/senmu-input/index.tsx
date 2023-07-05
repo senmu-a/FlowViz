@@ -1,10 +1,9 @@
-import Taro from '@tarojs/taro'
 import { Component, PropsWithChildren } from 'react'
-import { View, Input } from '@tarojs/components'
+import { View, Input, InputProps } from '@tarojs/components'
 
 import './index.scss'
 
-interface SenmuInputProps {
+interface SenmuInputProps extends InputProps {
   prefix?: React.ReactNode | string
   suffix?: React.ReactNode | string
 }
@@ -25,7 +24,7 @@ export default class SenmuInput extends Component<PropsWithChildren<SenmuInputPr
     return (
       <View className='senmu-input-affix-wrapper'>
         {prefix && <View className='senmu-input-prefix'>{prefix}</View>}
-        <Input {...rest} className='senmu-input' type='number' />
+        <Input {...rest} className='senmu-input' />
         {suffix && <View className='senmu-input-suffix'>{suffix}</View>}
       </View>
     )

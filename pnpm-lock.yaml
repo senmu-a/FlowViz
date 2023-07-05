@@ -26,6 +26,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.20.0
   '@typescript-eslint/parser': ^5.20.0
   babel-preset-taro: 3.6.5
+  dayjs: ^1.11.9
   eslint: ^8.12.0
   eslint-config-taro: 3.6.5
   eslint-plugin-import: ^2.12.0
@@ -58,6 +59,7 @@ dependencies:
   '@tarojs/runtime': 3.6.5
   '@tarojs/shared': 3.6.5
   '@tarojs/taro': 3.6.5_@types+react@18.2.7
+  dayjs: 1.11.9
   lodash: 4.17.15
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -4656,8 +4658,8 @@ packages:
       whatwg-url: 12.0.1
     dev: true
 
-  /dayjs/1.11.7:
-    resolution: {integrity: sha1-SylpImQvcJmVRNEUSiwlcw/OY+I=, tarball: dayjs/download/dayjs-1.11.7.tgz}
+  /dayjs/1.11.9:
+    resolution: {integrity: sha1-nKSRkz+t0KYKLBn2wjfANRfXHRo=, tarball: dayjs/download/dayjs-1.11.9.tgz}
     dev: false
 
   /debug/2.6.9:
@@ -11672,7 +11674,7 @@ packages:
       '@tarojs/react': 3.6.5_react@18.2.0
       '@tarojs/taro': 3.6.5_@types+react@18.2.7
       classnames: 2.3.2
-      dayjs: 1.11.7
+      dayjs: 1.11.9
       lodash: 4.17.15
       prop-types: 15.8.1
       react: 18.2.0

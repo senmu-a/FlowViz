@@ -4,20 +4,21 @@
   width: 100%;
   min-width: 0;
   padding: 8px 22px;
-  color: $font-color-shallow;
+  color: $font-color-shallow-light;
   font-size: 28px;
   line-height: 56px;
   background-color: transparent;
   background-image: none;
-  border: 2px solid $font-color-shallow;
+  border: 2px solid $font-color-shallow-light;
   border-radius: 4px;
-  transition: all .3s;
+  transition: all 0.3s;
   display: inline-flex;
   align-items: center;
-  .senmu-input-prefix,.senmu-input-suffix {
+  .senmu-input-prefix,
+  .senmu-input-suffix {
     display: flex;
     flex: none;
-    align-items: center
+    align-items: center;
   }
   .senmu-input-prefix {
     margin-right: 8px;
@@ -43,12 +44,26 @@
   width: 100%;
   min-width: 0;
   padding: 8px 22px;
-  color: $font-color-shallow;
+  color: $font-color-shallow-light;
   font-size: 28px;
   line-height: 56px;
   background-color: transparent;
   background-image: none;
-  border: 2px solid $font-color-shallow;
+  border: 2px solid $font-color-shallow-light;
   border-radius: 4px;
-  transition: all .3s
+  transition: all 0.3s;
+}
+
+/* 适配深色模式 */
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  .senmu-input-affix-wrapper {
+    color: $font-color-shallow;
+    border: 2px solid $font-color-shallow;
+  }
+  .senmu-input {
+    color: $font-color-shallow;
+    border: 2px solid $font-color-shallow;
+  }
+  /* DarkMode 下的样式 end */
 }

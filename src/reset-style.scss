@@ -1,0 +1,57 @@
+/* button */
+.at-button--primary {
+  background: $color-blue;
+  color: $color-brand-light;
+  border: $color-blue;
+}
+
+/* tabs */
+.at-tabs__header {
+  background: $color-brand-light;
+  .at-tabs__item {
+    color: $font-color-shallow-light;
+    &.at-tabs__item--active {
+      color: $color-blue;
+      .at-tabs__item-underline {
+        background: $color-blue;
+      }
+    }
+    .at-tabs__item-underline {
+      background: $font-color-shallow-light;
+    }
+  }
+}
+.at-tabs__underline {
+  background: $font-color-shallow-light;
+}
+
+/* 适配深色模式 */
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  // button
+  .at-button--primary {
+    background: $color-blue;
+    color: $font-color;
+    border: $color-blue;
+  }
+  //tabs
+  .at-tabs__header {
+    background: $color-brand;
+    .at-tabs__item {
+      color: $font-color-shallow;
+      &.at-tabs__item--active {
+        color: $color-blue;
+        .at-tabs__item-underline {
+          background: $color-blue;
+        }
+      }
+      .at-tabs__item-underline {
+        background: $font-color-shallow;
+      }
+    }
+  }
+  .at-tabs__underline {
+    background: $font-color-shallow;
+  }
+  /* DarkMode 下的样式 end */
+}
