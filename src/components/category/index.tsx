@@ -3,9 +3,13 @@ import { View, Text } from '@tarojs/components'
 
 import './index.scss'
 
+
+type Type = 'expense' | 'income'
+
 interface CategoryProps {
   icon: string | React.ReactNode
   name?: string
+  type?: Type
 }
 
 export default class Category extends Component<PropsWithChildren<CategoryProps>> {
@@ -20,18 +24,18 @@ export default class Category extends Component<PropsWithChildren<CategoryProps>
   componentDidHide () { }
 
   render () {
-    const { icon, name } = this.props
+    const { icon, name, type } = this.props
 
     const Icon = () => {
       if (typeof icon === 'string') {
-        return <View className={`iconfont ${icon}`} style={{ fontSize: '64rpx' }}></View>
+        return <View className={`iconfont ${icon}`}></View>
       } else {
         return <>{icon}</>
       }
     }
 
     return (
-      <View className='category-wrapper'>
+      <View className={`category-wrapper ${type && `category-type category-${type}`}`}>
         {icon && <Icon />}
         {name && <View className='category-name'>{name}</View>}
       </View>

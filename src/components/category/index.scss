@@ -9,6 +9,30 @@
   justify-content: center;
   align-items: center;
   color: $font-color-light;
+  .iconfont {
+    font-size: 64px;
+  }
+  &.category-type {
+    width: 600px;
+    height: 600px;
+    border-radius: 160px;
+    border: none;
+    .iconfont {
+      font-size: 400px;
+    }
+    .category-name {
+      font-size: 60px;
+      color: $date-brand_arrow-light;
+    }
+    &.category-expense {
+      background: $color-expense;
+      color: $color-expense;
+    }
+    &.category-income {
+      background: $color-income;
+      color: $color-income;
+    }
+  }
   .category-name {
     font-size: 30px;
   }
@@ -28,6 +52,17 @@
   .category-wrapper {
     color: $font-color;
     border: 2px solid $border-color;
+    &.category-type {
+      &.category-expense {
+        background: $color-expense-20;
+      }
+      &.category-income {
+        background: $color-income-20;
+      }
+      .category-name {
+        color: $date-brand_arrow;
+      }
+    }
   }
   /* DarkMode 下的样式 end */
 }

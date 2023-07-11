@@ -3,7 +3,8 @@ export default defineAppConfig({
     'pages/index/index',
     'pages/calculator/index',
     'pages/report/index',
-    'pages/settings/index'
+    'pages/settings/index',
+    'pages/component-demo/index'
   ],
   darkmode: true,
   themeLocation: 'theme.json',
@@ -26,7 +27,8 @@ export default defineAppConfig({
         text: '记账'
       },
       {
-        pagePath: 'pages/report/index',
+        // pagePath: 'pages/report/index',
+        pagePath: 'pages/component-demo/index',
         selectedIconPath: 'images/sales-report-fill.png',
         iconPath: 'images/sales-report.png',
         text: '报表'

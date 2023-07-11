@@ -25,6 +25,14 @@
   background: $font-color-shallow-light;
 }
 
+/* nav-bar */
+.at-nav-bar {
+  background: $color-brand-light;
+  .at-nav-bar__title, .at-nav-bar__left-view, .at-nav-bar__right-view {
+    color: $font-color-light;
+  }
+}
+
 /* 适配深色模式 */
 @media (prefers-color-scheme: dark) {
   /* DarkMode 下的样式 start */
@@ -52,6 +60,13 @@
   }
   .at-tabs__underline {
     background: $font-color-shallow;
+  }
+  // nav-bar
+  .at-nav-bar {
+    background: $color-brand;
+    .at-nav-bar__title, .at-nav-bar__left-view, .at-nav-bar__right-view {
+      color: $font-color;
+    }
   }
   /* DarkMode 下的样式 end */
 }
