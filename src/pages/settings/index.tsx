@@ -1,28 +1,36 @@
 import Taro from '@tarojs/taro'
-import { Component, PropsWithChildren } from 'react'
-import { View, Text } from '@tarojs/components'
-import { AtTabBar } from 'taro-ui'
+import { Component, PropsWithChildren } from "react";
+import { View, Text } from "@tarojs/components";
+import { AtList, AtListItem } from "taro-ui";
 
-import "taro-ui/dist/style/components/button.scss" // 按需引入
-import './index.scss'
+import "taro-ui/dist/style/components/button.scss"; // 按需引入
+import "./index.scss";
 
 export default class Settings extends Component<PropsWithChildren> {
-  async componentDidMount () {
+  async componentDidMount() {}
 
+  componentWillUnmount() {}
+
+  componentDidShow() {}
+
+  componentDidHide() {}
+
+  handleClick(type: string) {
+    Taro.navigateTo({ url: '/pages/category/index' })
   }
 
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  render () {
+  render() {
     return (
       <View className='settings'>
-        设置
-        <View className='at-icon at-icon-settings'></View>
+        <AtList hasBorder className='list-container'>
+          <AtListItem
+            iconInfo={{ size: 25, color: "#EAEAEA", value: "menu" }}
+            title='分类'
+            arrow='right'
+            onClick={this.handleClick.bind(this, 'category')}
+          ></AtListItem>
+        </AtList>
       </View>
-    )
+    );
   }
 }

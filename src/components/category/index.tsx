@@ -1,18 +1,16 @@
 import { Component, PropsWithChildren } from 'react'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
+import type { Type } from '../../lib/types'
 
 import './index.scss'
 
-
-type Type = 'expense' | 'income'
-
 interface CategoryProps {
-  icon: string | React.ReactNode
+  icon?: string | React.ReactNode
   name?: string
   type?: Type
 }
 
-export default class Category extends Component<PropsWithChildren<CategoryProps>> {
+export default class CategoryComp extends Component<PropsWithChildren<CategoryProps>> {
   async componentDidMount () {
 
   }

@@ -33,6 +33,32 @@
   }
 }
 
+/* list */
+.at-list {
+  background: transparent;
+  .at-list__item {
+    border-radius: 16px;
+    border: 2px solid $border-color-light;
+    color: $font-color-light;
+    &::after {
+      display: none;
+    }
+    transition: transform 0.1s;
+    &:active {
+      transform: scale(0.95);
+      background-color: transparent;
+    }
+  }
+  &::after {
+    display: none;
+  }
+}
+
+/* title */
+.at-article__h3 {
+  color: $date-brand_arrow;
+}
+
 /* 适配深色模式 */
 @media (prefers-color-scheme: dark) {
   /* DarkMode 下的样式 start */
@@ -67,6 +93,17 @@
     .at-nav-bar__title, .at-nav-bar__left-view, .at-nav-bar__right-view {
       color: $font-color;
     }
+  }
+  // list
+  .at-list {
+    .at-list__item {
+      border: 2px solid $border-color;
+      color: $font-color;
+    }
+  }
+  // title
+  .at-article__h3 {
+    color: $date-brand_arrow-light;
   }
   /* DarkMode 下的样式 end */
 }

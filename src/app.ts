@@ -5,7 +5,9 @@ import './icon.scss'
 
 class App extends Component<PropsWithChildren> {
 
-  componentDidMount () {}
+  componentDidMount () {
+
+  }
 
   componentDidShow () {}
 

@@ -61,7 +61,7 @@ const data = [
 ];
 
 
-export default class Index extends Component<PropsType, StateType> {
+export default class Demo extends Component<PropsType, StateType> {
   constructor(...args) {
     super(args);
     this.state = {

@@ -4,7 +4,8 @@ export default defineAppConfig({
     'pages/calculator/index',
     'pages/report/index',
     'pages/settings/index',
-    'pages/component-demo/index'
+    'pages/category/index',
+    'pages/component-demo/index',
   ],
   darkmode: true,
   themeLocation: 'theme.json',

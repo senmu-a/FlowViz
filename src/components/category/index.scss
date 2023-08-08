@@ -35,6 +35,7 @@
   }
   .category-name {
     font-size: 30px;
+    color: $date-brand_arrow-light;
   }
   &:active {
     border: 2px solid $color-blue;
@@ -62,6 +63,9 @@
       .category-name {
         color: $date-brand_arrow;
       }
+    }
+    .category-name {
+      color: $date-brand_arrow;
     }
   }
   /* DarkMode 下的样式 end */
