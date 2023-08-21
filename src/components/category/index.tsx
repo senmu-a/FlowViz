@@ -1,5 +1,5 @@
 import { Component, PropsWithChildren } from 'react'
-import { View } from '@tarojs/components'
+import { View, CommonEvent } from '@tarojs/components'
 import type { Type } from '../../lib/types'
 
 import './index.scss'
@@ -8,6 +8,8 @@ interface CategoryProps {
   icon?: string | React.ReactNode
   name?: string
   type?: Type
+  isSelected?: boolean
+  onClick?: (event: CommonEvent) => void
 }
 
 export default class CategoryComp extends Component<PropsWithChildren<CategoryProps>> {
@@ -22,7 +24,7 @@ export default class CategoryComp extends Component<PropsWithChildren<CategoryPr
   componentDidHide () { }
 
   render () {
-    const { icon, name, type } = this.props
+    const { icon, name, type, isSelected, onClick } = this.props
 
     const Icon = () => {
       if (typeof icon === 'string') {
@@ -33,7 +35,7 @@ export default class CategoryComp extends Component<PropsWithChildren<CategoryPr
     }
 
     return (
-      <View className={`category-wrapper ${type && `category-type category-${type}`}`}>
+      <View className={`category-wrapper ${isSelected && 'category-wrapper-active'} ${type && `category-type category-${type}`}`} onTap={onClick}>
         {icon && <Icon />}
         {name && <View className='category-name'>{name}</View>}
       </View>

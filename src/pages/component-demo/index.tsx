@@ -127,9 +127,9 @@ export default class Demo extends Component<PropsType, StateType> {
           }
         />
         category and icon：
-        <Category icon='icon-bank' />
+        {/* <Category icon='icon-bank' /> */}
         category and icon&name
-        <Category icon='icon-bank' name='银行' />
+        {/* <Category icon='icon-bank' name='银行' /> */}
         submit button：
         <AtButton type='primary' circle>
           提交
@@ -186,8 +186,8 @@ export default class Demo extends Component<PropsType, StateType> {
           </Picker>
         </AtNavBar>
         category-report：
-        <Category icon='icon-food' name='餐饮' type='expense' />
-        <Category icon='icon-food' name='餐饮' type='income' />
+        {/* <Category icon='icon-food' name='餐饮' type='expense' /> */}
+        {/* <Category icon='icon-food' name='餐饮' type='income' /> */}
         chart-line：
         <LineChart data={data} />
       </View>

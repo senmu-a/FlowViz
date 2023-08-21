@@ -1,6 +1,37 @@
+@import "../../custom-theme.scss";
+
 .category-container {
-  .category-list {
+  .category-remove-container {
     padding: 0 30px;
-    margin-top: 10px;
+    box-sizing: border-box;
+    .category-remove-button {
+      width: 100px;
+      margin: 0;
+    }
   }
+  .category-add-modal {
+    height: 100vh;
+    background: $color-brand-light;
+    color: $font-color-light;
+    .category-add-form {
+      padding: 0 30px;
+      .category-add-icon-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+      }
+    }
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  /* DarkMode 下的样式 start */
+  .category-container {
+    .category-add-modal {
+      background: $color-brand;
+      color: $font-color;
+    }
+  }
+  /* DarkMode 下的样式 end */
 }

@@ -1,6 +1,6 @@
 
 /** 通用请求类型 start */
-enum CodeEnum {
+export enum CodeEnum {
   ERROR = -1,
   SUCCESS = 0,
   OTHER = 1
@@ -35,7 +35,7 @@ export interface CategoryType {
   name?: string
   type?: TypeEnum
 }
-export type CategoryParams = Pick<CategoryType, 'name' | 'icon'>
+export type CategoryParams = Pick<CategoryType, 'name' | 'icon' | 'type'>
 /** 账目分类相关类型 end */
 
 /** 记账相关类型 start */

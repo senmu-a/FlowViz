@@ -41,7 +41,7 @@
     border: 2px solid $color-blue;
     color: $color-blue;
   }
-  ~.category-wrapper-active {
+  &.category-wrapper-active {
     border: 2px solid $color-blue;
     color: $color-blue;
   }
